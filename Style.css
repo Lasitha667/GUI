@@ -146,3 +146,26 @@ img.displaySlide{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-left: 80px;
 }
+.pagination{
+    text-align: center;
+
+}
+.pagination a{
+    color: lightblue;
+    text-decoration: none;
+    padding: 8px 15px;
+    display: inline-block;
+}
+.pagination a.active{
+    background-color: black;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.pagination a:hover:not(.active){
+    background-color: grey;
+    border-radius: 5px;;
+}
+.pagination Ho{
+    color: crimson;
+    font-weight: bolder;
+}
