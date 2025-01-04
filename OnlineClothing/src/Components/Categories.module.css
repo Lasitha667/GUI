@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .heading {
+    color: rgb(35, 44, 79);
+    letter-spacing: 3.08px;
+    text-align: center;
+    font: 700 44px 'Roboto Condensed', -apple-system, Roboto, Helvetica, sans-serif;
+    margin-top: 20px;
+  }
+  
+  .headingUnderline {
+    margin-top: 8px;
+    width: 100px;
+    height: 5px;
+    background: rgb(35, 44, 79);
+  }
+  
+  .categoryGrid {
+    width: 70%;
+    margin-top: 80px;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .categoryColumn {
+    width: 25%;
+  }
+  
+  .categoryCard {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    aspect-ratio: 0.882;
+    color: rgb(191, 163, 126);
+    text-align: center;
+    padding: 120px 27px;
+  }
+  
+  .categoryImage {
+    position: absolute;
+    inset: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .borderTop, .borderBottom {
+    position: relative;
+    background-color: #bfa37e;
+    height: 8px;
+    border: 8px solid rgb(191, 163, 126);
+  }
+  
+  .borderBottom {
+    margin-top: 20px;
+  }
+  
+  .categoryTitle {
+    position: relative;
+    align-self: center;
+    margin-top: 9px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font: 700 40px Roboto, sans-serif;
+  }
+  
+  @media (max-width: 991px) {
+    .categoryGrid {
+      flex-direction: column;
+      gap: 0;
+      margin-top: 40px;
+    }
+  
+    .categoryColumn {
+      width: 100%;
+    }
+  
+    .categoryCard {
+      margin-top: 40px;
+      padding: 100px 20px;
+    }
+  }
+  
