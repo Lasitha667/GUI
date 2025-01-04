@@ -1,0 +1,9 @@
+.heading {
+    color: rgba(0, 0, 0, 1);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    max-width: 338px;
+    font-size: 24px;
+    margin-top: 50px;
+    margin-left: 100px;
+  }
