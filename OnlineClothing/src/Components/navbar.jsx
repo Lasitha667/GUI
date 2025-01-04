@@ -1,5 +1,6 @@
 import React from "react";
 import './navbar.css';
+import './Search.css';
 
 
 
@@ -17,14 +18,12 @@ function Navbar () {
 
       </nav>
 
-
+      <div className='search-bar'>
+          <input type="text" placeholder="Search..." />
+        </div>
 
     </header>
-    <div className="search">
-        <div>SearchBar</div>
-        <div>SearchResults</div>
-      
-    </div></>
+  </>
     
   );
 }
