@@ -3,6 +3,7 @@
     flex-direction: column;
     font-family: Inter, sans-serif;
     padding: 50px 100px 100px;
+    color: #000;
   }
   
   .footerContainer {
@@ -10,6 +11,7 @@
     width: 100%;
     max-width: 1217px;
     flex-direction: column;
+    color: #000;
   }
   
   .brandContainer {
@@ -17,7 +19,7 @@
     align-items: center;
     gap: 4px;
     font-size: 24px;
-    color: rgba(4, 110, 27, 1);
+    color:black;
     font-weight: 600;
   }
   
