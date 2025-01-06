@@ -80,7 +80,7 @@
   }
   
   .link:hover {
-    color: rgba(4, 110, 27, 1);
+    color:red;
   }
   
   @media (max-width: 991px) {

@@ -20,7 +20,7 @@ const ColorLine = ({color}) =>(
         <ColorLine color='orange'/>
         <div className={styles.linksContainer}>
           <div className={styles.linksWrapper}>
-            <FooterLinks title="Menu" links={menuLinks} />
+            <FooterLinks title="" links={menuLinks} />
             <FooterLinks title="Categories" links={categoryLinks} />
             <FooterLinks title="Social" links={socialLinks} />
           </div>
