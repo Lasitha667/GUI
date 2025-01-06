@@ -1,0 +1,103 @@
+.footerSection {
+    display: flex;
+    flex-direction: column;
+    font-family: Inter, sans-serif;
+    padding: 50px 100px 100px;
+  }
+  
+  .footerContainer {
+    display: flex;
+    width: 100%;
+    max-width: 1217px;
+    flex-direction: column;
+  }
+  
+  .brandContainer {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 24px;
+    color: rgba(4, 110, 27, 1);
+    font-weight: 600;
+  }
+  
+  .brandLogo {
+    aspect-ratio: 1.1;
+    object-fit: contain;
+    width: 21px;
+  }
+  
+  .brandName {
+    align-self: stretch;
+    width: 170px;
+    gap: 4px;
+    color: rgb(0, 0, 0);
+    margin: auto 0;
+    font: 400 30px "Leckerli One", serif;
+  }
+  
+  .linksContainer {
+    display: flex;
+    margin-top: 50px;
+    width: 100%;
+    align-items: start;
+    gap: 40px;
+    color: #000;
+  }
+  
+  .linksWrapper {
+    display: flex;
+    min-width: 240px;
+    width: 100%;
+    align-items: start;
+    gap: 400px;
+    flex-wrap: wrap;
+  }
+  
+  .linkSection {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sectionTitle {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+  }
+  
+  .linkList {
+    display: flex;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .link {
+    color: inherit;
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  
+  .link:hover {
+    color: rgba(4, 110, 27, 1);
+  }
+  
+  @media (max-width: 991px) {
+    .footerSection {
+      padding: 0 20px;
+    }
+  
+    .footerContainer {
+      max-width: 100%;
+    }
+  
+    .linksContainer {
+      margin-top: 40px;
+    }
+  
+    .brandContainer {
+      white-space: initial;
+    }
+  }
+  
