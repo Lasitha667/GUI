@@ -35,7 +35,7 @@
     flex-direction: column;
     position: relative;
     aspect-ratio: 0.882;
-    color: rgb(191, 163, 126);
+    color: white;
     text-align: center;
     padding: 120px 27px;
   }
@@ -52,7 +52,7 @@
     position: relative;
     background-color: #bfa37e;
     height: 8px;
-    border: 8px solid rgb(191, 163, 126);
+    border: 8px solid black;
   }
   
   .borderBottom {

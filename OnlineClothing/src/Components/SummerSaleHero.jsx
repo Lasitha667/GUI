@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from './SummerSaleHero.module.css';
+import SummerSale from '../assets/black-wallpaper-black-and-white-casual-dark.jpg'
 
 export default function SummerSaleHero() {
   return (
@@ -7,7 +8,7 @@ export default function SummerSaleHero() {
       <div className={styles.heroWrapper}>
         <img
           loading="lazy"
-          src="https://cdn.builder.io/api/v1/image/assets/TEMP/245d2072fa618747e56ed78c411f863b091aac8443e88897b1d40c62db9cc758?placeholderIfAbsent=true&apiKey=c2fc95f0055440488c382d41de291f5d"
+         src={SummerSale}
           className={styles.heroBackground}
           alt="Summer sale background"
         />

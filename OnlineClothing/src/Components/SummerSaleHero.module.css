@@ -26,7 +26,7 @@
   
   .heroTitle {
     position: relative;
-    color:black;
+    color:white;
     letter-spacing: 10.08px;
     text-transform: uppercase;
     width: 656px;
@@ -44,7 +44,7 @@
   }
   
   .description {
-    color: #050b23;
+    color: white;
     letter-spacing: 3.75px;
     flex-grow: 1;
     width: 661px;
@@ -59,6 +59,7 @@
     flex-basis: auto;
     font: 25px/24px Roboto Condensed, -apple-system, Roboto, Helvetica, sans-serif;
   }
+ 
   
   .ctaButton {
     margin-top: 16px;
