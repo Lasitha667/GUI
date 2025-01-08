@@ -53,13 +53,13 @@ button {
   transition: background-color 0.3s ease;
 }
 .login {
-  background-color: #007bff;
+  background-color: black;
 }
 .login:hover {
   background-color: #0056b3;
 }
 .signup {
-  background-color: #28a745;
+  background-color: black;
 }
 .signup:hover {
   background-color: #1e7e34;

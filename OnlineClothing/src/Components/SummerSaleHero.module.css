@@ -63,11 +63,12 @@
   
   .ctaButton {
     margin-top: 16px;
+    margin-left: 0%;
     gap: 8px;
     color: black;
     font-weight: bolder;
     flex-basis: auto;
-    padding: 16px 64px;
+    
     font: 35px Roboto, sans-serif;
     border: 5px solid black;
     cursor: pointer;

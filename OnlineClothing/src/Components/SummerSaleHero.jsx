@@ -17,10 +17,7 @@ export default function SummerSaleHero() {
           <p className={styles.description}>
             Special Sales on New Year Event
           </p>
-          <p className={styles.description2}>New 
-            <br/>Collecton
-            <br />
-            Available </p>
+          
           <button 
             className={styles.ctaButton}
             onClick={() => {}}
