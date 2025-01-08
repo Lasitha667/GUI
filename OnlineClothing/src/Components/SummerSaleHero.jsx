@@ -1,6 +1,6 @@
 import * as React from "react";
 import styles from './SummerSaleHero.module.css';
-import SummerSale from '../assets/black-wallpaper-black-and-white-casual-dark.jpg'
+import SummerSale from '../assets/blue-aesthetic-mens-fashion-bncfzboi26coh5qq.jpg'
 
 export default function SummerSaleHero() {
   return (

@@ -26,7 +26,7 @@
   
   .heroTitle {
     position: relative;
-    color:white;
+    color:black;
     letter-spacing: 10.08px;
     text-transform: uppercase;
     width: 656px;
@@ -36,7 +36,7 @@
   .contentWrapper {
     position: relative;
     display: flex;
-    margin-top: 33px;
+    margin-top: 150px;
     width: 100%;
     align-items: start;
     gap: 40px 95px;
@@ -44,7 +44,7 @@
   }
   
   .description {
-    color: white;
+    color: black;
     letter-spacing: 3.75px;
     flex-grow: 1;
     width: 661px;
@@ -64,11 +64,12 @@
   .ctaButton {
     margin-top: 16px;
     gap: 8px;
-    color: #fff;
+    color: black;
+    font-weight: bolder;
     flex-basis: auto;
     padding: 16px 64px;
     font: 35px Roboto, sans-serif;
-    border: 3px solid #fff;
+    border: 5px solid black;
     cursor: pointer;
     background: transparent;
   }

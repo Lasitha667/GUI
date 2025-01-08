@@ -1,5 +1,5 @@
 import React from 'react';
-import Navbar from './Components/Navbar/Navigation.jsx';
+import Navbar from './Components/navbar.jsx';
 import SummerSale from './Components/SummerSaleHero';
 import Categories from './Components/Categories';
 import Footer from './Components/Footer/Footer.jsx';
