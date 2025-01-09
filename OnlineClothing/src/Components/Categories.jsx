@@ -4,7 +4,7 @@ import styles from './Categories.module.css';
 import Hoodies from'../assets/exclusive-mockups-branding-packaging-design-260nw-1932288902.jpg';
 import Shirts from'../assets/360_F_624605814_OA34oXG5ORsvoZcURk1KAK5YylIWSO4O.jpg';
 import Jacket from'../assets/aHR0cHM6Ly9iLnN0YWJsZWNvZy5jb20vNmZiNWVlZWItMjljZS00N2Y3LTllZmMtYTQ4NWE4ZWU4NjhjLmpwZWc.jpg'
-import Bottoms from'../assets/4-6-680x920.jpg';
+import Bottoms from'../assets/Bottom2.jpg';
 
 
 const categoryData = [
@@ -29,6 +29,7 @@ const Categories = () => {
           </div>
         ))}
       </div>
+      
     </div>
   );
 };
