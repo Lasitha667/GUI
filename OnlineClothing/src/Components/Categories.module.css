@@ -39,6 +39,7 @@
     text-align: center;
     padding: 120px 27px;
     
+    
   }
   
   .categoryImage {
@@ -67,6 +68,7 @@
     text-transform: uppercase;
     letter-spacing: 3px;
     font: 700 40px Roboto, sans-serif;
+  
   }
   
   @media (max-width: 991px) {

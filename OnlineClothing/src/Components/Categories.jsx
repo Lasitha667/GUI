@@ -8,10 +8,10 @@ import Bottoms from'../assets/Bottom2.jpg';
 
 
 const categoryData = [
-  { imageSrc: Bottoms, title: 'BOTTOMS' },
-  { imageSrc: Jacket, title: 'JACKETS' },
-  { imageSrc: Shirts, title: 'SHIRTS' },
-  { imageSrc: Hoodies, title: 'HOODIES' }
+  { imageSrc: Bottoms, title: 'BOTTOMS', link: '/bottoms' },
+  { imageSrc: Jacket, title: 'JACKETS', link: '/jackets' },
+  { imageSrc: Shirts, title: 'SHIRTS', link: '/shirts' },
+  { imageSrc: Hoodies, title: 'HOODIES', link: '/hoodies' }
 ];
 
 const Categories = () => {
@@ -22,14 +22,15 @@ const Categories = () => {
       <div className={styles.categoryGrid}>
         {categoryData.map((category, index) => (
           <div key={index} className={styles.categoryColumn}>
-            <CategoryCard
-              imageSrc={category.imageSrc}
-              title={category.title}
-            />
+            <a href={category.link}>
+              <CategoryCard
+                imageSrc={category.imageSrc}
+                title={category.title}
+              />
+            </a>
           </div>
         ))}
       </div>
-      
     </div>
   );
 };
