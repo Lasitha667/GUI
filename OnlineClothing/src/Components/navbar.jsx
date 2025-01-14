@@ -13,10 +13,10 @@ function Navbar () {
       <><header className="header">
       <a href="/" className="logo" img src ={Logo}>MonoModa</a>
       <nav className="navbar">
-        <Link to = "/Home"> Home</Link>
-        <Link to = "/New Arrivals"> New Arrivals</Link>
-        <Link to = "/Contact Us">  Contact Us</Link>
-        <Link to = "/About Us"> About Us</Link>
+        
+        <a href = "/arrivals"> New Arrivals</a>
+        <a href = "/contact">  Contact Us</a>
+        <a href = "/about"> About Us</a>
         
 
 
