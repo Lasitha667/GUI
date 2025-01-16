@@ -11,12 +11,12 @@ function Navbar () {
   return (
     
       <><header className="header">
-      <a href="/" className="logo" img src ={Logo}>MonoModa</a>
+      <Link to="/" className="logo" img src ={Logo}>MonoModa</Link>
       <nav className="navbar">
         
-        <a href = "/arrivals"> New Arrivals</a>
-        <a href = "/contact">  Contact Us</a>
-        <a href = "/about"> About Us</a>
+        < Link to= "/arrivals"> New Arrivals</Link>
+        <Link to = "/contact">  Contact Us</Link>
+        <Link to = "/about"> About Us</Link>
         
 
 
