@@ -1,3 +1,11 @@
-export default function AboutUs() {
-    return <h1>About Us Page</h1>;
+import React from "react";
+
+function ContactUs() {
+    return  <div>
+          
+      
+   
+    
+  </div>
   }
+  export default ContactUs;

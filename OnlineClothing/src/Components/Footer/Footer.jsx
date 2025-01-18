@@ -1,45 +1,55 @@
-import React from 'react';
-import './Footer.css';
+import React from "react";
+import { FaFacebook, FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa";
+import "./Footer.css"; 
 
-
-
-
-function Footer() {
-  return(
-    <footer className="footer">
-      <div className="footer-container">
-        <div className="footer-section about">
-          <h2>About Us</h2>
-          <p>Welcome to StyleHub, your go-to store for the latest trends in fashion. We aim to deliver style and comfort to all our customers.</p>
+const Footer = () => {
+  return (
+    <footer className="footer-container">
+      <div className="footer-content">
+        <h2 className="footer-logo">MonoModa</h2>
+        <p className="footer-description">
+          Your go-to destination for modern and stylish clothing.
+        </p>
+        <div className="footer-social-icons">
+          <a
+            href="https://facebook.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <FaFacebook />
+          </a>
+          <a
+            href="https://instagram.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <FaInstagram />
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <FaTwitter />
+          </a>
+          <a
+            href="https://pinterest.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="social-icon"
+          >
+            <FaPinterest />
+          </a>
         </div>
-        <div className="footer-section links">
-          <h2>Quick Links</h2>
-          <ul>
-            <li><a href="#shop">Shop</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li><a href="#faq">FAQ</a></li>
-          </ul>
-        </div>
-        <div className="footer-section contact">
-          <h2>Contact Us</h2>
-          <p>Email: support@stylehub.com</p>
-          <p>Phone: +123-456-7890</p>
-          <p>Address: 123 Fashion Ave, Style City</p>
-        </div>
-        <div>
-          <h2>Follow Us</h2>
-          <div>
-            
-          </div>
-        </div>
-        
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2025 StyleHub | All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} MonoModa. All rights reserved.</p>
       </div>
     </footer>
   );
-}
+};
 
 export default Footer;

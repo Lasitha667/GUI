@@ -1,14 +1,15 @@
 import React from 'react';
 import SummerSale from '../SummerSaleHero';
-import Categories from '../Categories';
+
 import Footer from '../Footer/Footer.jsx';
+import Banner from '../Banner/Banner.jsx';
 
 function Home(){
     return (
         <div>
           
           <SummerSale/>
-          <Categories/>
+          <Banner/>
           <Footer/>
          
           
