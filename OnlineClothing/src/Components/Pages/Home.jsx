@@ -8,8 +8,9 @@ function Home(){
     return (
         <div>
           
-          <SummerSale/>
           <Banner/>
+          <SummerSale/>
+          
           <Footer/>
          
           
