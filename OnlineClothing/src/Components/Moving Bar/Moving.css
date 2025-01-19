@@ -1,0 +1,36 @@
+.horizontal-bar {
+    width: 100%;
+   
+    background-color: red; /* Dark background */
+    color: white;
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+  }
+  
+  .horizontal-scroll {
+    display: inline-flex;
+    animation: scroll 70s linear infinite; /* Moves the items horizontally */
+  }
+  
+  .bar-item {
+    padding: 15px 60px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-left: 1px solid #444; /* Optional to separate items */
+  }
+  
+  .bar-item:first-child {
+    border-left: none;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  

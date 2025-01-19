@@ -19,7 +19,7 @@ const ClothingStoreBanner = () => {
           <h2>UPTO</h2>
           <h1>20% OFF</h1>
           <p>ON SELECTED ITEMS</p>
-          <p className="brand-name">MonoModa Co.</p>
+          <p className="brand-name">MonoModa.Co</p>
           <p className="website">www.MonoModa-co.com</p>
         </div>
       </div>

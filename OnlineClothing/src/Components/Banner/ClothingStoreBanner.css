@@ -1,14 +1,13 @@
 .banner-container {
     display: flex;
-    margin-top: 100px;
-    margin-left: 100px;
-    margin-right: 100px;
+    
+    
     justify-content: space-between;
     align-items: center;
-    background-color: #1e1e1e; /* Dark background */
+    background : linear-gradient(to right,black,white); /* Dark background */
     color: white;
     padding: 20px;
-    height: 100vh;
+    height: 650px;
   }
   
   .text-section {
@@ -17,7 +16,7 @@
   }
   
   .text-section h1 {
-    font-size: 2.5rem;
+    font-size: 2.5 rem;
     margin-bottom: 20px;
   }
   
@@ -27,6 +26,7 @@
   }
   
   .promo-section {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
