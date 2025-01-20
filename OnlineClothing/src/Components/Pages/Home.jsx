@@ -12,12 +12,13 @@ function Home(){
            
           
           
-          
+           <Slider/>
+           <Moving/>
           <Banner/>
-          <Moving/>
+          
           
           <SummerSale/>
-          <Slider/>
+          
           
         
          

@@ -3,11 +3,10 @@ import './ImageSlider.css';
 
 const ImageSlider = () => {
   const images = [
-    './image1.jpg', // Replace with your actual image paths
-    './image2.jpg',
-    './image3.jpg',
-    './image6.jpg',
-    './image7.jpg',
+    './Sketch-Co-Hero-Slider-1-scaled.jpg', // Replace with your actual image paths
+    './Sketch-Co-Hero-Slider-2-scaled.jpg',
+    './Sketch-Co-Hero-Slider-3-scaled.jpg',
+    
   ];
 
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -45,10 +44,7 @@ const ImageSlider = () => {
         </button>
       </div>
 
-      {/* Text next to the image slider */}
-      <div className="text">
-        <h2>New arrivals available</h2>
-      </div>
+     
     </div>
   );
 };
