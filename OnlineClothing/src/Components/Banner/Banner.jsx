@@ -1,26 +1,45 @@
 import React from "react";
 import "./ClothingStoreBanner.css";
-import promoImage from '../../assets/472709897_1004841068332711_6913993373117599696_n.jpg';
+
+
 const ClothingStoreBanner = () => {
   return (
-    <div className="banner-container">
-      <div className="text-section">
-        <h1>Your Latest Online Clothing Store in Sri Lanka.</h1>
-        <p>
-          Discover a new level of style at Sketch Co, your online clothing store
-          in Sri Lanka. Our clothing reflects individuality and is designed for
-          comfort and durability. Enjoy convenient home delivery with our
-          islandwide service, bringing the latest fashion right to your door.
-        </p>
+    <div className="banners-container">
+      {/* Banner 1 */}
+      <div className="banner-container01">
+        <div className="text-section1">
+          <h1>Your Latest Online Clothing Store in Sri Lanka</h1>
+          <p>
+            Discover unique styles at Sketch Co. Our collections are curated for 
+            comfort, durability, and individuality. Shop now and enjoy home delivery 
+            anywhere in Sri Lanka.
+          </p>
+        </div>
+        <div className="promo-section">
+          <img src='image7.jpg' alt="Promotional Offer 1" className="promo-image" />
+          <div className="promo-text1">
+            <h2>UPTO</h2>
+            <h1>20% OFF</h1>
+            <p>ON SELECTED ITEMS</p>
+          </div>
+        </div>
       </div>
-      <div className="promo-section">
-        <img src={promoImage} alt="Promotional Offer" className="promo-image" />
-        <div className="promo-text">
-          <h2>UPTO</h2>
-          <h1>20% OFF</h1>
-          <p>ON SELECTED ITEMS</p>
-          <p className="brand-name">MonoModa.Co</p>
-          <p className="website">www.MonoModa-co.com</p>
+      {/* Banner 2 */}
+      <div className="banner-container02">
+        <div className="text-section2">
+          <h1>Exclusive Winter Collection Now Available!</h1>
+          <p>
+            Elevate your wardrobe with our latest winter collection. Designed 
+            to keep you warm while staying stylish. Order now for doorstep delivery!
+          </p>
+        </div>
+        <div className="promo-section">
+          <img src='image1.jpg' alt="Promotional Offer 2" className="promo-image" />
+          <div className="promo-text2">
+            <h2>LIMITED</h2>
+            <h1>30% OFF</h1>
+            <p>ON WINTER COLLECTION</p>
+          </div>
         </div>
       </div>
     </div>
