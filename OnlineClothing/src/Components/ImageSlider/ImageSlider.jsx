@@ -3,9 +3,13 @@ import './ImageSlider.css';
 
 const ImageSlider = () => {
   const images = [
-    './Sketch-Co-Hero-Slider-1-scaled.jpg', // Replace with your actual image paths
+    './Sketch-Co-Hero-Slider-1-scaled.jpg', 
+    './Hustle_web_banner_2160_x_720_bdaf86b4-56b0-48dd-b0c0-f2f353d8cd46.jpg',
     './Sketch-Co-Hero-Slider-2-scaled.jpg',
+    './kings_Street_web_banner_2160_x_720.jpg',
     './Sketch-Co-Hero-Slider-3-scaled.jpg',
+    
+    
     
   ];
 
@@ -19,14 +23,14 @@ const ImageSlider = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
   };
 
-  // Automatically change slides every 4 seconds
+
   useEffect(() => {
     const interval = setInterval(() => {
       nextSlide();
-    }, 5000); // Change slides every 4000ms (4 seconds)
+    }, 5000); 
 
-    return () => clearInterval(interval); // Cleanup interval on component unmount
-  }, []); // Use an empty dependency array to ensure it runs only once on mount
+    return () => clearInterval(interval); 
+  }, []); 
 
   return (
     <div className="slider-container">
