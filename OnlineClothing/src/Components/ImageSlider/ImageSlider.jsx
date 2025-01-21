@@ -8,7 +8,7 @@ const ImageSlider = () => {
     './Sketch-Co-Hero-Slider-2-scaled.jpg',
     './kings_Street_web_banner_2160_x_720.jpg',
     './Sketch-Co-Hero-Slider-3-scaled.jpg',
-    
+    './Home-Hero-Banner-Desktop-9.jpg'
     
     
   ];

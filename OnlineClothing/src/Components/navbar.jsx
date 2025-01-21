@@ -1,7 +1,7 @@
 import React from "react";
 import './navbar.css';
 import './search.css';
-import Logo from '../assets/610e4e1ceb531802e43da44d89f1f86e.jpg'
+
 import { Link } from 'react-router-dom';
 
 
@@ -11,7 +11,7 @@ function Navbar () {
   return (
     
       <><header className="header">
-      <Link to="/" className="logo" img src ={Logo}>MonoModa.co</Link>
+      <Link to="/" className="logo" >MonoModa.co</Link>
       <nav className="navbar">
         
       < Link to= "/arrivals">New Arrivals</Link>

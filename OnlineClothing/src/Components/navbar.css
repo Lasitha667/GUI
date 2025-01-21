@@ -4,6 +4,7 @@
   top: 0;
   left: 0;
   width: 100%;
+  
   padding: 15px 10%;
   background: linear-gradient(to right, #000, #333);
   display: flex;
@@ -21,6 +22,7 @@
 
 /* Logo styling */
 .logo {
+ 
   color: #fff;
   font-size: 1.8rem;
   font-weight: 700;
