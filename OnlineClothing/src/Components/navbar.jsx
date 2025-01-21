@@ -14,9 +14,10 @@ function Navbar () {
       <Link to="/" className="logo" img src ={Logo}>MonoModa.co</Link>
       <nav className="navbar">
         
-        < Link to= "/arrivals">New Arrivals</Link>
-        <Link to = "/contact">Contact Us</Link>
-        <Link to = "/about">About Us</Link>
+      < Link to= "/arrivals">New Arrivals</Link>
+      <Link to = "/contact">Contact Us</Link>
+      <Link to = "/about">About Us</Link>
+       
         
 
 
