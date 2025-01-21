@@ -5,7 +5,7 @@ import Footer from './Components/Footer/Footer.jsx'
 import { BrowserRouter as Router ,Route,Routes } from 'react-router-dom';
 import About from './Components/Pages/AboutUs.jsx'
 import Login from './Components/Pages/Login page/Login.jsx'
-import Contact from './Components/Pages/ContactUs.jsx'
+
 
 
 
@@ -28,7 +28,7 @@ function App() {
       <Routes>
         <Route path ="/" element ={<Home/>} />
         <Route path ="/about" element ={<About/>} />
-        <Route path ="/contact" element ={<Contact/>} />
+        
         <Route path ="/login" element ={<Login/>} />
       
       

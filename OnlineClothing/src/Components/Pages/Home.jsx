@@ -6,6 +6,7 @@ import Banner from '../Banner/Banner.jsx';
 import Moving from '../Moving Bar/Moving.jsx';
 import Cards from '../Cards/Cards.jsx';
 import Slider from '../ImageSlider/ImageSlider.jsx';
+import Features from '../BottomInfo/bottominfo.jsx';
 function Home(){
     return (
         <div>
@@ -15,6 +16,7 @@ function Home(){
           <Slider/>
           <Moving/>
           <Banner/>
+          <Features/>
           
           
           

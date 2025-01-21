@@ -1,67 +1,73 @@
 /* General container for banners */
 .banners-container {
+  width: 100%; /* Fill the screen horizontally */
+  background-color: #f9f9f9;
+}
+
+/* Top Stories Header */
+.top-stories-header {
+  
+  text-align: center;
+  padding: 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.top-stories-header h1 {
+  font-size: 3rem;
+  color: black;
+}
+
+/* Banners Section */
+.banners-section {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
   height: 100vh; /* Fill the screen vertically */
-  width: 100%; /* Fill the screen horizontally */
 }
 
 /* Individual banner styles */
-.banner-container01 {
-  flex: 1; /* Makes both banners equal in width */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 20px;
-  color: white;
-  background-color: white;
-}
+.banner-container01,
 .banner-container02 {
   flex: 1; /* Makes both banners equal in width */
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   padding: 20px;
-  color: white;
-  background-color: black;
 }
 
-/* Banner-specific styles for distinction */
-
-
-/* Text section */
-.text-section1 {
-  text-align: center;
-  margin-bottom: 20px;
+.banner-container01 {
+  background-color: white;
   color: black;
 }
+
+.banner-container02 {
+  background-color: black;
+  color: white;
+}
+
+/* Text section */
+.text-section1,
 .text-section2 {
   text-align: center;
   margin-bottom: 20px;
-  color: white;
 }
 
+.text-section1 h1{
+    color: black;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
 
-.text-section1 h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: black;
-}
-
-.text-section1 p {
-  font-size: 1.2rem;
-  color: black;
-}
 .text-section2 h1 {
+  color: white;
   font-size: 2rem;
   margin-bottom: 10px;
-  color: white;
 }
 
+.text-section1 p,
 .text-section2 p {
   font-size: 1.2rem;
-  color: white;
 }
 
 /* Promo section */
@@ -77,19 +83,22 @@
   margin-bottom: 10px;
 }
 
+.promo-text1,
+.promo-text2 {
+  padding: 10px 15px;
+  border-radius: 8px;
+  display: inline-block;
+  color: white;
+}
 
 .promo-text1 {
-  background:blue;
-  padding: 10px 15px;
-  border-radius: 8px;
-  display: inline-block;
+  background: blue;
 }
+
 .promo-text2 {
   background: red;
-  padding: 10px 15px;
-  border-radius: 8px;
-  display: inline-block;
 }
+
 .promo-text h2,
 .promo-text h1,
 .promo-text p {
@@ -107,11 +116,12 @@
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  .banners-container {
+  .banners-section {
     flex-direction: column;
   }
 
-  .banner-container {
+  .banner-container01,
+  .banner-container02 {
     height: 50vh; /* Adjust height for stacked layout */
   }
 }
