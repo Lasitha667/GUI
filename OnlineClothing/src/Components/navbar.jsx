@@ -18,7 +18,8 @@ function Navbar() {
         </div>
         <div className="button-container">
           <Link to="/login"><button className="login">Login</button></Link>
-          <button className="signup">Sign Up</button>
+         
+          <Link to="/sighup"><button className="sighup">SignUp</button></Link>
         </div>
       </header>
     </>

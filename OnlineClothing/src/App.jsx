@@ -5,6 +5,7 @@ import Footer from './Components/Footer/Footer.jsx'
 import { BrowserRouter as Router ,Route,Routes } from 'react-router-dom';
 import About from './Components/Pages/AboutUs.jsx'
 import Login from './Components/Pages/Login page/Login.jsx'
+import SighUp from './Components/Pages/SighUp/signup.jsx';
 
 
 
@@ -30,6 +31,7 @@ function App() {
         <Route path ="/about" element ={<About/>} />
         
         <Route path ="/login" element ={<Login/>} />
+        <Route path ="/sighup" element ={<SighUp/>} />
       
       
         
