@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./ProductCards.css";
+import "./cardswomen.css";
 
 const products = [
   {
@@ -52,7 +52,7 @@ const products = [
   },
 ];
 
-const ProductDisplay = () => {
+const ProductDisplay2 = () => {
   const [cart, setCart] = useState([]);
 
   const handleAddToCart = (product) => {
@@ -64,7 +64,7 @@ const ProductDisplay = () => {
     
     <div>
       <div className="NewHeader">
-        <h1>New Arrivals</h1>
+        <h1>Womens Wear</h1>
         </div>
       
       <div className="product-container">
@@ -87,4 +87,4 @@ const ProductDisplay = () => {
   );
 };
 
-export default ProductDisplay;
+export default ProductDisplay2;

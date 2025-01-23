@@ -1,10 +1,10 @@
-/* General container for banners */
+
 .banners-container {
-  width: 100%; /* Fill the screen horizontally */
+  width: 100%; 
   background-color: #f9f9f9;
 }
 
-/* Top Stories Header */
+
 .top-stories-header {
   
   text-align: center;
@@ -18,18 +18,18 @@
   color: black;
 }
 
-/* Banners Section */
+
 .banners-section {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
-  height: 100vh; /* Fill the screen vertically */
+  height: 100vh; 
 }
 
-/* Individual banner styles */
+
 .banner-container01,
 .banner-container02 {
-  flex: 1; /* Makes both banners equal in width */
+  flex: 1; 
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -46,7 +46,7 @@
   color: white;
 }
 
-/* Text section */
+
 .text-section1,
 .text-section2 {
   text-align: center;
@@ -70,7 +70,7 @@
   font-size: 1.2rem;
 }
 
-/* Promo section */
+
 .promo-section {
   position: relative;
   text-align: center;
@@ -114,7 +114,7 @@
   font-size: 1.5rem;
 }
 
-/* Responsive adjustments */
+
 @media (max-width: 768px) {
   .banners-section {
     flex-direction: column;

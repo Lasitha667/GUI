@@ -4,14 +4,14 @@ import "./ClothingStoreBanner.css";
 const ClothingStoreBanner = () => {
   return (
     <div className="banners-container">
-      {/* Top Stories Header */}
+     
       <div className="top-stories-header">
         <h1>Top Stories</h1>
       </div>
 
-      {/* Banner Section */}
+     
       <div className="banners-section">
-        {/* Banner 1 */}
+        
         <div className="banner-container01">
           <div className="text-section1">
             <h1>Your Latest Online Clothing Store in Sri Lanka</h1>
