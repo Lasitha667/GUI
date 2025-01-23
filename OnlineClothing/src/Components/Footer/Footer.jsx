@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="footer-container">
       <div className="footer-content">
-        <h2 className="footer-logo">MonoModa.co</h2>
+        <h2 className="footer-logo">Thread & Co.</h2>
         <p className="footer-description">
           Your go-to destination for modern and stylish clothing.
         </p>
@@ -46,7 +46,7 @@ const Footer = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} MonoModa.co. All rights reserved.</p>
+        <p>&copy; {new Date().getFullYear()} Thread & Co.. All rights reserved.</p>
       </div>
     </footer>
   );

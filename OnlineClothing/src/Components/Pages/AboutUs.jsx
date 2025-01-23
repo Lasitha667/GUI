@@ -2,11 +2,11 @@ import './AboutUs.css'
 
 export default function AboutUs() {
     return <><header>
-      <h1>Welcome to Monamoda.co</h1>
+      <h1>Welcome to Thread & Co.</h1>
     </header><div class="container">
         <section class="about-section">
           <h1>About Us</h1>
-          <p>At Monomoda.co, we believe fashion is more than just clothing—it's a way to express yourself, your style, and your story. Since our inception, we've been committed to bringing you the latest trends and timeless styles, all at an affordable price.</p>
+          <p>At Thread & Co., we believe fashion is more than just clothing—it's a way to express yourself, your style, and your story. Since our inception, we've been committed to bringing you the latest trends and timeless styles, all at an affordable price.</p>
           
         </section>
 

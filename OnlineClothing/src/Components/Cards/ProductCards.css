@@ -55,7 +55,7 @@
 /* Product Installment */
 .product-installment {
   font-size: 14px;
-  color: #888; /* Softer color for secondary info */
+  color: red; /* Softer color for secondary info */
   margin-bottom: 16px;
 }
 

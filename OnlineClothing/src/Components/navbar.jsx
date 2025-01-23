@@ -7,7 +7,7 @@ function Navbar() {
   return (
     <>
       <header className="header">
-        <Link to="/" className="logo">MonoModa.co</Link>
+        <Link to="/" className="logo">Thread & Co.</Link>
         <nav className="navbar">
           <Link to="/men">Mens</Link>
           <Link to="/women">Womens</Link>
