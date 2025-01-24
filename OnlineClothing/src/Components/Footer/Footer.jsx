@@ -1,52 +1,63 @@
 import React from "react";
-import { FaFacebook, FaInstagram, FaTwitter, FaPinterest } from "react-icons/fa";
-import "./Footer.css"; 
+import "./Footer.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faFacebook, faInstagram, faTiktok } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
-    <footer className="footer-container">
-      <div className="footer-content">
-        <h2 className="footer-logo">Thread & Co.</h2>
-        <p className="footer-description">
-          Your go-to destination for modern and stylish clothing.
-        </p>
-        <div className="footer-social-icons">
-          <a
-            href="https://facebook.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <FaFacebook />
-          </a>
-          <a
-            href="https://instagram.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <FaInstagram />
-          </a>
-          <a
-            href="https://twitter.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <FaTwitter />
-          </a>
-          <a
-            href="https://pinterest.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="social-icon"
-          >
-            <FaPinterest />
-          </a>
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-logo">
+          <h2>Thread & Co.</h2>
+          <p>Quality threads for every occasion</p>
+          <p className="footer-contact">
+            <span>📞</span> +94 (71) 568 7863
+          </p>
+          <p className="footer-contact">
+            <span>📧</span> info@threadandco.com
+          </p>
+          <div className="social-icons">
+  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faFacebook} size="2x" />
+  </a>
+  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faInstagram} size="2x" />
+  </a>
+  <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+    <FontAwesomeIcon icon={faTiktok} size="2x" />
+  </a>
+</div>
+        </div>
+
+        <div className="footer-section">
+          <h3>Thread & Co. Network</h3>
+          <ul>
+            <li>Ambalangoda</li>
+            <li>Badulla</li>
+            <li>Kandy</li>
+          </ul>
+        </div>
+
+        <div className="footer-section">
+          <h3>Information</h3>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/men">Men's Wear</a></li>
+            <li><a href="/women">Women'Wear</a></li>
+            <li><a href="/about">About Us</a></li>
+           
+            
+          </ul>
         </div>
       </div>
+
       <div className="footer-bottom">
-        <p>&copy; {new Date().getFullYear()} Thread & Co.. All rights reserved.</p>
+        <p>Copyright © 2024 Thread & Co. All Rights Reserved</p>
+        <div className="payment-icons">
+          <img src="visa.jpg" alt="Visa" />
+          <img src="mastercard.jpg" alt="Mastercard" />
+          <img src="cashondelivery.jpg" alt="Cash on Delivery" />
+        </div>
       </div>
     </footer>
   );

@@ -23,8 +23,8 @@ function App() {
  
 
   return (
-   <div>
     
+   <div>
     <Navbar/>
     <div>
       <Routes>

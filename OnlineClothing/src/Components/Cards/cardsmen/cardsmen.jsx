@@ -3,37 +3,37 @@ import "./cardsmen.css";
 
 const products = [
     {
-      image: "card1.jpg",
+      image: "card3.jpg",
       title: "Ladies  Top",
       price: 1800,
       installment: "In Stock",
     },
     {
-      image: "card2.jpg",
+      image: "card5.jpg",
       title: "Ladies Top",
       price: 2600,
       installment: "In Stock",
     },
     {
-      image: "card3.jpg",
+      image: "card7.jpg",
       title: "Mens Shirt",
       price: 1400,
       installment: "In Stock",
     },
     {
-      image: "card5.jpg",
+      image: "card8.jpg",
       title: "Mens T-shirt",
       price: 2500,
       installment: "In Stock",
     },
     {
-      image: "card4.jpg",
+      image: "",
       title: "Ladies Top",
       price: 2500,
       installment: "In Stock",
     },
     {
-      image: "image1.jpg",
+      image: "",
       title: "Ladies Shirt",
       price: 2500,
       installment: "In Stock",

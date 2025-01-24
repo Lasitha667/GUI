@@ -50,6 +50,30 @@ const products = [
     price: 1400,
     installment: "In Stock",
   },
+  {
+    image: "card9.jpg",
+    title: "Ladies Dress",
+    price: 1400,
+    installment: "In Stock",
+  },
+  {
+    image: "card10.jpg",
+    title: "Ladies Dress",
+    price: 1400,
+    installment: "In Stock",
+  },
+  {
+    image: "card11.jpg",
+    title: "Mens Shirt",
+    price: 1400,
+    installment: "In Stock",
+  },
+  {
+    image: "card12.jpg",
+    title: "Mens Shirt",
+    price: 1400,
+    installment: "In Stock",
+  },
 ];
 
 const ProductDisplay = () => {
