@@ -13,8 +13,7 @@ const Features = () => {
         </div>
         <h3>SUPPORT 24/7</h3>
         <p>24/7 Customer Support</p>
-        <p>0112-5689-789</p>
-        <p>Thread & Co.@gmail.com </p>
+        
       </div>
 
       {/* Feature 2 */}

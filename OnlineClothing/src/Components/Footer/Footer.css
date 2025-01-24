@@ -1,8 +1,9 @@
 .footer {
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: black;
+  color: white;
   font-family: Arial, sans-serif;
-  padding: 20px 40px;
+  padding: 70px 40px;
+  
 }
 
 .footer-container {
@@ -24,6 +25,7 @@
 
 .footer-logo p {
   margin: 5px 0;
+  color: white;
 }
 
 .footer-contact {
@@ -44,6 +46,7 @@
 .footer-section h3 {
   font-size: 18px;
   margin-bottom: 10px;
+  color: white;
 }
 
 .footer-section ul {
@@ -61,17 +64,19 @@
   border-top: 1px solid #ccc;
   padding-top: 10px;
 }
-
+.footer-bottom p{
+  color: white;
+}
 .payment-icons img {
   height: 24px;
   margin: 0 5px;
 }
 .footer-section ul li a {
   text-decoration: none;
-  color: #333;
+  color: white;
   transition: color 0.3s;
 }
 
 .footer-section ul li a:hover {
-  color: #007bff; /* Change to your brand's primary color */
+  color: red; /* Change to your brand's primary color */
 }
