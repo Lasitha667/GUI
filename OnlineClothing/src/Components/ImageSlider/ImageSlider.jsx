@@ -4,11 +4,11 @@ import './ImageSlider.css';
 const ImageSlider = () => {
   const images = [
     './Sketch-Co-Hero-Slider-1-scaled.jpg', 
-    './Hustle_web_banner_2160_x_720_bdaf86b4-56b0-48dd-b0c0-f2f353d8cd46.jpg',
+    
     './Sketch-Co-Hero-Slider-2-scaled.jpg',
     './kings_Street_web_banner_2160_x_720.jpg',
     './Sketch-Co-Hero-Slider-3-scaled.jpg',
-    './Home-Hero-Banner-Desktop-9.jpg'
+    '/upper.jpg'
     
     
   ];
