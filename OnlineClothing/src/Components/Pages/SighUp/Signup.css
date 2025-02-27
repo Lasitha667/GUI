@@ -17,6 +17,10 @@
     max-width: 400px;
     text-align: center;
   }
+  .container:hover{
+    background: lightgrey;
+    transition: 0s;
+}
   
   .signup-container h1 {
     font-size: 1.8rem;

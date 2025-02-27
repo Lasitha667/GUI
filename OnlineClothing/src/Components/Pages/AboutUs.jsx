@@ -3,7 +3,7 @@ import './AboutUs.css'
 export default function AboutUs() {
     return <><header>
       <h1>Welcome to Thread & Co.</h1>
-    </header><div class="container">
+    </header><div class="container2">
         <section class="about-section">
           <h1>About Us</h1>
           <p>At Thread & Co., we believe fashion is more than just clothing—it's a way to express yourself, your style, and your story. Since our inception, we've been committed to bringing you the latest trends and timeless styles, all at an affordable price.</p>
