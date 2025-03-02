@@ -2,8 +2,8 @@
     width: 100%;
     
    
-    background-color: rgb(233, 26, 26); /* Dark background */
-    color: black;
+    background-color:black; /* Dark background */
+    color: white;
     overflow: hidden;
     white-space: nowrap;
     position: relative;

@@ -46,7 +46,7 @@ function Login() {
           </button>
         </form>
         <div className="extra-links">
-          <a href="#">Forgot Password?</a> | <a href="/signup">Sign Up</a>
+          <a href="#">Forgot Password?</a> | <a href="/sighup">Sign Up</a>
         </div>
       </div>
     </div>
