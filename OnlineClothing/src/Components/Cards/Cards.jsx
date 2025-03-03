@@ -16,42 +16,68 @@ const products = [
   { image: "card12.jpg", title: "Mens Shirt", price: 1400, installment: "In Stock" },
 ];
 
+const ProductDisplay = () => {
+  const [cart, setCart] = useState([]);
+  const [cartOpen, setCartOpen] = useState(false);
 
+  const handleAddToCart = (product) => {
+    setCart((prevCart) => {
+      const existingItem = prevCart.find((item) => item.title === product.title);
+      if (existingItem) {
+        return prevCart.map((item) =>
+          item.title === product.title ? { ...item, quantity: item.quantity + 1 } : item
+        );
+      } else {
+        return [...prevCart, { ...product, quantity: 1 }];
+      }
+    });
 
+    setCartOpen(true);
+  };
 
+  const handleRemoveFromCart = (title) => {
+    setCart((prevCart) => prevCart.filter((item) => item.title !== title));
+  };
 
-const ProductDisplay = ({ handleAddToCart }) => {
+  const handleCheckout = () => {
+    alert("Proceeding to checkout!");
+    setCart([]);
+    setCartOpen(false);
+  };
+
   return (
     <div>
       <div className="NewHeader">
         <h1>New Arrivals</h1>
       </div>
+
       <div className="product-container">
         {products.map((product, index) => (
           <div className="product-card" key={index}>
             <img src={product.image} alt={product.title} className="product-image" />
             <h3 className="product-title">{product.title}</h3>
             <p className="product-price">LKR {product.price.toLocaleString()}</p>
-            <label htmlFor="size">Size - </label>
-            <select name="size" id="size">
-              <option value="XS">XS</option>
-              <option value="S">S</option>
-              <option value="M">M</option>
-              <option value="L">L</option>
-              <option value="XL">XL</option>
-              <option value="XXL">XXL</option>
-            </select>
-            <p className="product-installment">{product.installment}</p>
-            <button
-              className="add-to-cart-button"
-              onClick={() => handleAddToCart(product)}
-              disabled={product.installment === "Out of Stock"}
-            >
+            <button className="add-to-cart-button" onClick={() => handleAddToCart(product)}>
               Add to Cart
             </button>
           </div>
         ))}
       </div>
+
+      {/* 🛒 Cart Popup - Now in Top-Right */}
+      {cartOpen && (
+        <div className="cart-popup">
+          <div className="cart-header">
+            <h2>Shopping Cart</h2>
+            <button onClick={() => setCartOpen(false)} className="close-cart-btn">
+              ✖
+            </button>
+          </div>
+        
+         
+
+        </div>
+      )}
     </div>
   );
 };

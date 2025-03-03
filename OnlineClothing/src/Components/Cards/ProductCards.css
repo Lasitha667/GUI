@@ -145,31 +145,4 @@
     margin-right: 15px;
   }
   
-  .remove-cart-button {
-    background-color: #e74c3c;
-    color: white;
-    padding: 5px 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .remove-cart-button:hover {
-    background-color: #c0392b;
-  }
-  
-  .clear-cart-button {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-  }
-  
-  .clear-cart-button:hover {
-    background-color: #0056b3;
-  }
-  
 }
