@@ -8,7 +8,7 @@ import Login from './Components/Pages/Login page/Login.jsx'
 import SighUp from './Components/Pages/SighUp/signup.jsx';
 import Men from './Components/Pages/Mens/mens.jsx'
 import Women from './Components/Pages/Women/women.jsx'
-
+import Checkout from './Components/Checkout/checkout.jsx';
 
 
 
@@ -35,6 +35,7 @@ function App() {
         
         <Route path ="/login" element ={<Login/>} />
         <Route path ="/sighup" element ={<SighUp/>} />
+        <Route path="/checkout" element={<Checkout />} />
       
       
         

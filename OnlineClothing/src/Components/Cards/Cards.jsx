@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import "./ProductCards.css";
 
 const products = [
@@ -20,6 +21,7 @@ const products = [
 ];
 
 const ProductDisplay = () => {
+  const navigate = useNavigate();
   const [cart, setCart] = useState([]);
   const [cartOpen, setCartOpen] = useState(false);
   const [showPopup, setShowPopup] = useState(false);
@@ -37,7 +39,10 @@ const ProductDisplay = () => {
     }
 
     setCart(prevCart => {
-      const existingItem = prevCart.find(item => item.id === product.id && item.size === selectedSize);
+      const existingItem = prevCart.find(item => 
+        item.id === product.id && item.size === selectedSize
+      );
+      
       return existingItem 
         ? prevCart.map(item => 
             item.id === product.id && item.size === selectedSize 
@@ -53,13 +58,9 @@ const ProductDisplay = () => {
   };
 
   const handleRemoveFromCart = (productId, size) => {
-    setCart(prevCart => prevCart.filter(item => !(item.id === productId && item.size === size)));
-  };
-
-  const handleCheckout = () => {
-    alert("Proceeding to checkout!");
-    setCart([]);
-    setCartOpen(false);
+    setCart(prevCart => 
+      prevCart.filter(item => !(item.id === productId && item.size === size))
+    );
   };
 
   const calculateCartTotal = () => {
@@ -69,6 +70,21 @@ const ProductDisplay = () => {
       discount: subtotal * 0.05,
       total: subtotal * 0.95
     };
+  };
+
+  const handleCheckout = () => {
+    navigate('/checkout', { 
+      state: { 
+        cart: cart.map(item => ({
+          id: item.id,
+          title: item.title,
+          size: item.size,
+          quantity: item.quantity,
+          price: item.price
+        })), 
+        total: calculateCartTotal().total 
+      } 
+    });
   };
 
   return (
