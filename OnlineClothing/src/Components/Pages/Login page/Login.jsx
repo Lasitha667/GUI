@@ -16,7 +16,7 @@ function Login() {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:3000/auth/login", { email, password });
+      const response = await axios.post("http://localhost:3000/login", { email, password });
       console.log(response);
 
       if (response.status === 200) {
@@ -76,7 +76,7 @@ function Login() {
         </form>
 
         <div className="extra-links">
-          <a href="#">Forgot Password?</a> | <a href="/signup">Sign Up</a>
+          <a href="#">Forgot Password?</a> | <a href="/sighup">Sign Up</a>
         </div>
       </div>
     </div>

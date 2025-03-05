@@ -28,11 +28,12 @@ const Signup = () => {
     setError("");
 
     try {
-      const response = await axios.post("http://localhost:3000/auth/add", formData);
+      const response = await axios.post("http://localhost:3000/register", formData);
       console.log(response);
 
       if (response.status === 201) {
         setMessage("Signup successful! You can now log in.");
+        
         setFormData({ username: "", email: "", password: "" }); // ✅ Reset with correct fields
       }
     } catch (err) {

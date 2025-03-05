@@ -1,56 +1,47 @@
-/* Header Styling */
+.search-bar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 4px;
+  transition: width 0.3s ease-in-out;
+  width: 230px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+}
 
-  
-  /* Search Bar Container Styling */
-  .search-bar {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: auto;  /* Moves it to the right */
-    margin-right: 4px; /* Adds space from the right edge */
-    transition: width 0.3s ease-in-out;
-    width: 230px; /* Initially small size */
-    height: 40px; /* Circle size */
-    border-radius: 50%;
-    overflow: hidden;
-  }
-  
-  /* Search Input Styling */
-  .search-bar input {
-    width: 0;
-    height: 30px;
-    padding: 0 10px;
-    border: 1px solid #ccc;
-    border-radius: 15px;
-    outline: none;
-    font-size: 14px;
-    transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
-    opacity: 0; /* Start hidden */
-  }
-  
-  /* Show search input when focused */
-  .search-bar.focused input {
-    width: 150px; /* Adjust the width on focus */
-    padding: 8px 15px;
-    opacity: 1;
-  }
-  
-  /* Search Icon Styling */
-  .search-icon {
-    position: absolute;
-    color: white;
-    font-size: 18px;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-  }
-  
-  .search-bar.focused .search-icon {
-    transform: scale(0); /* Hide the icon when focused */
-  }
-  
-  /* Focus Effect */
-  .search-bar input:focus {
-    box-shadow: 0 0 8px rgba(255, 77, 77, 0.5);
-  }
-  
+.search-bar input {
+  width: 0;
+  height: 30px;
+  padding: 0 10px;
+  border: 1px solid #ccc;
+  border-radius: 15px;
+  outline: none;
+  font-size: 14px;
+  transition: width 0.3s ease-in-out, padding 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.search-bar.focused input {
+  width: 150px;
+  padding: 8px 15px;
+  opacity: 1;
+}
+
+.search-icon {
+  position: absolute;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.search-bar.focused .search-icon {
+  transform: scale(0);
+}
+
+.search-bar input:focus {
+  box-shadow: 0 0 8px rgba(255, 77, 77, 0.5);
+}

@@ -2,7 +2,7 @@
     width: 100%;
     
    
-    background-color:black; /* Dark background */
+    background-color:black; 
     color: white;
     overflow: hidden;
     white-space: nowrap;
@@ -11,7 +11,7 @@
   
   .horizontal-scroll {
     display: inline-flex;
-    animation: scroll 70s linear infinite; /* Moves the items horizontally */
+    animation: scroll 70s linear infinite; 
   }
   
   .bar-item {
@@ -19,7 +19,7 @@
     text-align: center;
     font-weight: bold;
     text-transform: uppercase;
-    border-left: 1px solid #444; /* Optional to separate items */
+    border-left: 1px solid #444; 
   }
   
   .bar-item:first-child {

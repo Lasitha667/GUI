@@ -39,15 +39,27 @@ const products = [
     installment: "In Stock",
   },
    {
-    image: "",
-    title: "Mens Short",
-    price: 2500,
+    image: "TW14376.1_1880x.jpg",
+    title: "Ladies Dress",
+    price: 3500,
     installment: "Out of Stock",
   },
   {
-    image: "",
-    title: "Mens Shirt",
-    price: 1400,
+    image: "TW14240_1880x.jpg",
+    title: "Ladies Dress",
+    price: 5400,
+    installment: "In Stock",
+  },
+  {
+    image: "image3(2).jpg",
+    title: "Ladies Dress",
+    price: 5400,
+    installment: "In Stock",
+  },
+  {
+    image: "image2 (1).jpg",
+    title: "Ladies Dress",
+    price: 5400,
     installment: "In Stock",
   },
 ];
@@ -64,7 +76,7 @@ const ProductDisplay2 = () => {
     
     <div>
       <div className="NewHeader">
-        <h1>Womens Wear</h1>
+        <h1>Ladies Wear</h1>
         </div>
       
       <div className="product-container">
