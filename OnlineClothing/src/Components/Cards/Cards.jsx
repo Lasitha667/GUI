@@ -6,7 +6,7 @@ const products = [
   { id: 2, image: "card2.jpg", title: "Ladies Top", price: 3600, installment: "In Stock" },
   { id: 3, image: "card3.jpg", title: "Mens Shirt", price: 4400, installment: "In Stock" },
   { id: 4, image: "card5.jpg", title: "Mens T-shirt", price: 3500, installment: "In Stock" },
-  { id: 5, image: "card4.jpg", title: "Ladies Top", price: 3500, installment: "In Stock" },
+  { id: 5, image: "card4.jpg", title: "Ladies Top(Limited Edition)", price: 3500, installment: "In Stock" },
   { id: 6, image: "image1.jpg", title: "Ladies Shirt", price: 2500, installment: "In Stock" },
   { id: 7, image: "card7.jpg", title: "Mens Short", price: 2500, installment: "Out of Stock" },
   { id: 8, image: "card8.jpg", title: "Mens Shirt", price: 3400, installment: "In Stock" },
