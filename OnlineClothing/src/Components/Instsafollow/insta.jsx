@@ -3,9 +3,9 @@ import "./insta.css";
 
 
 const images = [
-  { url: "/card9.jpg" },
-  { url: "/card3.jpg" },
-  { url: "/image2 (1).jpg" },
+  { url: "/Firefly-20240617204232-1-1024x1024.webp" },
+  { url: "/LK66161630-11-E.jpg" },
+  
   
 ];
 
@@ -28,8 +28,8 @@ const InstaFeed = () => {
     <section className="insta-section">
       
       <div className="insta-text">
-        <h2>@Thread</h2>
-        <p>Join our fam! Shop the looks from our Insta Feed</p>
+        <h2>@serendip</h2>
+        <p>Join our fam! </p>
         <button className="follow-btn">FOLLOW US</button>
       </div>
 

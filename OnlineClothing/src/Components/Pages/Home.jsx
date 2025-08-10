@@ -17,7 +17,7 @@ function Home(){
            
           <Slider/>
           <Moving/>
-          <Cards/>
+          
           <Banner/>
           <Customer/>
           <Instagram/>

@@ -19,19 +19,19 @@ const Features = () => {
       {/* Feature 2 */}
       <div className="feature">
         <div className="icon">
-          <i className="fas fa-truck"></i>
+          <i className="fas fa-car"></i>
         </div>
-        <h3>ISLANDWIDE DELIVERY</h3>
+        <h3>ISLANDWIDE Transpotation</h3>
         <p>Delivery to anywhere in Sri Lanka</p>
       </div>
 
       {/* Feature 3 */}
       <div className="feature">
         <div className="icon">
-          <i className="fas fa-undo"></i>
+          <i className="fas fa-shield-alt"></i>
         </div>
-        <h3>EASY RETURN</h3>
-        <p>Simply return it within 30 days.</p>
+        <h3>Safety & Comfort</h3>
+        <p>Your well-being is our top priority.</p>
       </div>
     </div>
   );

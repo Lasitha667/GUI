@@ -1,5 +1,5 @@
 import React from 'react';
-import Cards from '../../Cards/cardsmen/cardsmen.jsx'
+import Cards from '../../Cards/Destinations/destinations.jsx'
 import Banner from '../../Banner/Banner.jsx'
 
 function Men(){

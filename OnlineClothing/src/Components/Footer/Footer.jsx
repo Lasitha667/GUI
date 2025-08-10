@@ -8,13 +8,13 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-logo">
-          <h2>Thread & Co.</h2>
-          <p>Quality threads for every occasion</p>
+          <h2>Serendip Travels</h2>
+          <p>ready to show you the island’s breathtaking landscapes</p>
           <p className="footer-contact">
             <span>📞</span> +94 (71) 568 7863
           </p>
           <p className="footer-contact">
-            <span>📧</span> info@threadandco.com
+            <span>📧</span> info@serendip.com
           </p>
           <div className="social-icons">
   <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
@@ -32,7 +32,7 @@ const Footer = () => {
         <div className="footer-section">
           <h3>Thread & Co. Network</h3>
           <ul>
-            <li>Ambalangoda</li>
+            <li>Colombo</li>
             <li>Badulla</li>
             <li>Kandy</li>
           </ul>
@@ -42,8 +42,8 @@ const Footer = () => {
           <h3>Information</h3>
           <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="/men">Men's Wear</a></li>
-            <li><a href="/women">Women'Wear</a></li>
+            <li><a href="/destinations">Destinations</a></li>
+            <li><a href="/guides">Our Guides</a></li>
             <li><a href="/about">About Us</a></li>
            
             
@@ -56,7 +56,7 @@ const Footer = () => {
         <div className="payment-icons">
           <img src="visa.jpg" alt="Visa" />
           <img src="mastercard.jpg" alt="Mastercard" />
-          <img src="cashondelivery.jpg" alt="Cash on Delivery" />
+          
         </div>
       </div>
     </footer>

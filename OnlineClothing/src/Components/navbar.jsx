@@ -49,11 +49,11 @@ function Navbar() {
 
   return (
     <header className="header">
-      <Link to="/" className="logo">Thread & Co.</Link>
+      <Link to="/" className="logo">Serendip Travels</Link>
 
       <nav className="navbar">
-        <Link to="/men">Mens</Link>
-        <Link to="/women">Womens</Link>
+        <Link to="/destinations">Destinations</Link>
+        <Link to="/guides">Guides</Link>
         <Link to="/about">About Us</Link>
       </nav>
 

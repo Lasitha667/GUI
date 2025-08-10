@@ -3,12 +3,11 @@ import './ImageSlider.css';
 
 const ImageSlider = () => {
   const images = [
-    './Sketch-Co-Hero-Slider-1-scaled.jpg', 
-    
-    './Sketch-Co-Hero-Slider-2-scaled.jpg',
-    './kings_Street_web_banner_2160_x_720.jpg',
-    './Sketch-Co-Hero-Slider-3-scaled.jpg',
-    '/upper.jpg'
+   
+    '/MIRISSA-HSE-FINISHED-4-ELLA-BRIDGE_3-1-1024x683.jpg',
+    '/IMG_1155-min.jpg',
+    '/kitesurfing-fitness-training-guide.jpg',
+    '/sri-lanka-sigiriya.webp',
     
     
   ];

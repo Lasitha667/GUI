@@ -3,21 +3,21 @@ import "./customer.css";
 
 const testimonials = [
   {
-    name: "Menuka Wijekoon",
+    name: "John & Emily - UK",
     review:
-      "I just got my first order and I have one word WOW!! The fit is great and neat. Love it ❤️❤️ I'll be back to buy more. For sure.",
+      "Our trip to Sri Lanka was simply magical! From the beaches of Mirissa to the tea fields of Nuwara Eliya, everything was perfectly planned. Our guide was friendly, knowledgeable, and made us feel like family.",
     rating: 5,
   },
   {
-    name: "Susan Kumanayake",
+    name: "Mark – Australia",
     review:
-      "Highly recommended!! Friendly customer services and good quality dresses for reasonable price. Definitely will shop again 😍",
+      "Professional, punctual, and passionate! Every day was an adventure, and we learned so much about the culture and history. Can’t wait to come back!",
     rating: 5,
   },
   {
-    name: "Nirasha Miyuri",
+    name: "Sophia – Germany",
     review:
-      "Highly recommended!! 😍😍 Friendly customer service, high quality products & fast delivery..❤️❤️😍",
+      "The personal care and attention to detail were incredible. We felt safe, comfortable, and welcomed throughout our journey. Truly unforgettable!",
     rating: 5,
   },
 ];
