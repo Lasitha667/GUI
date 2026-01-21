@@ -1,0 +1,86 @@
+[
+    {
+        "id": 1,
+        "name": "Classic White Tee",
+        "price": "$29.00",
+        "image": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?q=80&w=800&auto=format",
+        "category": "Men"
+    },
+    {
+        "id": 2,
+        "name": "Denim Jacket",
+        "price": "$89.00",
+        "image": "https://images.unsplash.com/photo-1576871337632-b9aef4c17ab9?q=80&w=800&auto=format",
+        "category": "Men"
+    },
+    {
+        "id": 3,
+        "name": "Chino Pants",
+        "price": "$59.00",
+        "image": "https://images.unsplash.com/photo-1624378439575-d8705ad7ae80?q=80&w=800&auto=format",
+        "category": "Men"
+    },
+    {
+        "id": 4,
+        "name": "Oxford Shirt",
+        "price": "$65.00",
+        "image": "https://images.unsplash.com/photo-1596755094514-f87e34085b2c?q=80&w=800&auto=format",
+        "category": "Men"
+    },
+    {
+        "id": 5,
+        "name": "Leather Boots",
+        "price": "$120.00",
+        "image": "https://images.unsplash.com/photo-1638247025967-b4e38f787b76?q=80&w=800&auto=format",
+        "category": "Men"
+    },
+    {
+        "id": 6,
+        "name": "Aviator Sunglasses",
+        "price": "$150.00",
+        "image": "https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?q=80&w=800&auto=format",
+        "category": "Men"
+    },
+    {
+        "id": 101,
+        "name": "Summer Floral Dress",
+        "price": "$49.00",
+        "image": "https://images.unsplash.com/photo-1572804013309-59a88b7e92f1?q=80&w=800&auto=format",
+        "category": "Women"
+    },
+    {
+        "id": 102,
+        "name": "Silk Blouse",
+        "price": "$75.00",
+        "image": "https://images.unsplash.com/photo-1620799140408-ed5341cd2431?q=80&w=800&auto=format",
+        "category": "Women"
+    },
+    {
+        "id": 103,
+        "name": "High-Waist Jeans",
+        "price": "$65.00",
+        "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?q=80&w=800&auto=format",
+        "category": "Women"
+    },
+    {
+        "id": 104,
+        "name": "Leather Handbag",
+        "price": "$140.00",
+        "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?q=80&w=800&auto=format",
+        "category": "Women"
+    },
+    {
+        "id": 105,
+        "name": "Wool Coat",
+        "price": "$199.00",
+        "image": "https://images.unsplash.com/photo-1539533018447-63fcce2678e3?q=80&w=800&auto=format",
+        "category": "Women"
+    },
+    {
+        "id": 106,
+        "name": "Ankle Boots",
+        "price": "$95.00",
+        "image": "https://images.unsplash.com/photo-1551107696-a4b0c5a0d9a2?q=80&w=800&auto=format",
+        "category": "Women"
+    }
+]

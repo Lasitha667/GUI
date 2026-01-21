@@ -1,0 +1,191 @@
+/* Removed old .hero styles as HeroSlider handles it now */
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 5rem;
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.feature-item {
+    flex: 1;
+    padding: 2rem;
+    background-color: var(--color-white);
+    border-radius: 8px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s;
+}
+
+.feature-item:hover {
+    transform: translateY(-5px);
+}
+
+.feature-item svg {
+    color: var(--color-accent);
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-primary);
+}
+
+.feature-item p {
+    color: var(--color-text-light);
+    font-size: 0.9rem;
+}
+
+.btn {
+    padding: 1rem 2rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: transform 0.2s, background-color 0.2s, box-shadow 0.2s;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+    background-color: var(--color-accent);
+    color: var(--color-primary);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--color-white);
+    color: var(--color-white);
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-bottom: 5rem;
+}
+
+.category-card {
+    height: 500px;
+    /* Increased height for impact */
+    background-color: #ddd;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+}
+
+.category-card:hover .men-category,
+.category-card:hover .women-category {
+    transform: scale(1.05);
+}
+
+.men-category {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), url('https://images.unsplash.com/photo-1490114538077-0a7f8cb49891?q=80&w=1000&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s;
+}
+
+.women-category {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent), url('https://images.unsplash.com/photo-1550928431-ee0ec6db30d3?q=80&w=1000&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.5s;
+}
+
+.category-content {
+    padding: 3rem;
+    color: var(--color-white);
+    width: 100%;
+    position: relative;
+    z-index: 2;
+}
+
+.category-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.link-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    border-bottom: 2px solid var(--color-accent);
+    padding-bottom: 4px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+}
+
+/* Newsletter */
+.newsletter {
+    background-color: var(--color-primary);
+    padding: 5rem 0;
+    color: var(--color-white);
+    text-align: center;
+}
+
+.newsletter-content {
+    max-width: 600px;
+}
+
+.newsletter h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.newsletter p {
+    margin-bottom: 2rem;
+    opacity: 0.8;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 1rem;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    font-family: inherit;
+}
+
+@media (max-width: 768px) {
+    .features {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .categories {
+        grid-template-columns: 1fr;
+    }
+
+    .category-card {
+        height: 350px;
+    }
+
+    .newsletter-form {
+        flex-direction: column;
+    }
+}

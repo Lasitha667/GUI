@@ -1,0 +1,45 @@
+:root {
+  --color-primary: #0F172A; /* Deep Navy */
+  --color-secondary: #F8FAFC; /* Off White */
+  --color-accent: #C0A062; /* Gold/Beige Accent */
+  --color-text: #334155; /* Slate 700 */
+  --color-text-light: #64748B; /* Slate 500 */
+  --color-white: #FFFFFF;
+  --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --container-width: 1200px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-secondary);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
