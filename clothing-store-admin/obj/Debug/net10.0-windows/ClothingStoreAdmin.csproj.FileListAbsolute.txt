@@ -1,0 +1,15 @@
+X:\GUI\clothing-store-admin\bin\Debug\net10.0-windows\ClothingStoreAdmin.exe
+X:\GUI\clothing-store-admin\bin\Debug\net10.0-windows\ClothingStoreAdmin.deps.json
+X:\GUI\clothing-store-admin\bin\Debug\net10.0-windows\ClothingStoreAdmin.runtimeconfig.json
+X:\GUI\clothing-store-admin\bin\Debug\net10.0-windows\ClothingStoreAdmin.dll
+X:\GUI\clothing-store-admin\bin\Debug\net10.0-windows\ClothingStoreAdmin.pdb
+X:\GUI\clothing-store-admin\obj\Debug\net10.0-windows\ClothingStoreAdmin.GeneratedMSBuildEditorConfig.editorconfig
+X:\GUI\clothing-store-admin\obj\Debug\net10.0-windows\ClothingStoreAdmin.AssemblyInfoInputs.cache
+X:\GUI\clothing-store-admin\obj\Debug\net10.0-windows\ClothingStoreAdmin.AssemblyInfo.cs
+X:\GUI\clothing-store-admin\obj\Debug\net10.0-windows\ClothingStoreAdmin.csproj.CoreCompileInputs.cache
+X:\GUI\clothing-store-admin\obj\Debug\net10.0-windows\ClothingStoreAdmin.sourcelink.json
+X:\GUI\clothing-store-admin\obj\Debug\net10.0-windows\ClothingStoreAdmin.dll
+X:\GUI\clothing-store-admin\obj\Debug\net10.0-windows\refint\ClothingStoreAdmin.dll
+X:\GUI\clothing-store-admin\obj\Debug\net10.0-windows\ClothingStoreAdmin.pdb
+X:\GUI\clothing-store-admin\obj\Debug\net10.0-windows\ClothingStoreAdmin.genruntimeconfig.cache
+X:\GUI\clothing-store-admin\obj\Debug\net10.0-windows\ref\ClothingStoreAdmin.dll
