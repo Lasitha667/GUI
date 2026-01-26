@@ -8,23 +8,25 @@ import Login from './pages/Login'
 import Signup from './pages/Signup'
 import { CartProvider } from './context/CartContext'
 import CartDrawer from './components/CartDrawer'
+import { AuthProvider } from './context/AuthContext'
 import './App.css'
 
 function App() {
   return (
-    <CartProvider>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="men" element={<Men />} />
-
-          <Route path="women" element={<Women />} />
-        </Route>
-        <Route path="/login" element={<Login />} />
-        <Route path="/signup" element={<Signup />} />
-      </Routes>
-      <CartDrawer />
-    </CartProvider>
+    <AuthProvider>
+      <CartProvider>
+        <Routes>
+          <Route path="/" element={<Layout />}>
+            <Route index element={<Home />} />
+            <Route path="men" element={<Men />} />
+            <Route path="women" element={<Women />} />
+          </Route>
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+        <CartDrawer />
+      </CartProvider>
+    </AuthProvider>
   )
 }
 

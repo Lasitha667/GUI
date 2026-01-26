@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import './Auth.css';
 
 const Signup = () => {
     const [username, setUsername] = useState('');
@@ -20,7 +21,8 @@ const Signup = () => {
             });
 
             if (response.ok) {
-                console.log('Signup successful');
+                const text = await response.text();
+                console.log(text);
                 navigate('/login');
             } else {
                 const data = await response.text();
@@ -33,101 +35,59 @@ const Signup = () => {
     };
 
     return (
-        <div style={styles.container}>
-            <div style={styles.formContainer}>
-                <h2>Sign Up</h2>
-                {error && <p style={styles.error}>{error}</p>}
-                <form onSubmit={handleSubmit} style={styles.form}>
-                    <div style={styles.inputGroup}>
-                        <label>Username</label>
-                        <input
-                            type="text"
-                            value={username}
-                            onChange={(e) => setUsername(e.target.value)}
-                            required
-                            style={styles.input}
-                        />
+        <div className="auth-container">
+            <div className="auth-image-side" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1445205170230-053b83016050?q=80&w=2671&auto=format&fit=crop)' }}></div>
+
+            <div className="auth-form-side">
+                <div className="auth-form-container fade-in">
+                    <h2 className="auth-title">Create Account</h2>
+                    <p className="auth-subtitle">Join us for exclusive offers & new arrivals</p>
+
+                    {error && <div className="auth-error">{error}</div>}
+
+                    <form onSubmit={handleSubmit} className="auth-form">
+                        <div className="form-group">
+                            <label>Username</label>
+                            <input
+                                type="text"
+                                value={username}
+                                onChange={(e) => setUsername(e.target.value)}
+                                required
+                                placeholder="Choose a username"
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label>Email</label>
+                            <input
+                                type="email"
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                                required
+                                placeholder="name@example.com"
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label>Password</label>
+                            <input
+                                type="password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                                placeholder="Create a password"
+                            />
+                        </div>
+
+                        <button type="submit" className="auth-button">Sign Up</button>
+                    </form>
+
+                    <div className="auth-footer">
+                        Already have an account?
+                        <Link to="/login" className="auth-link">Login</Link>
                     </div>
-                    <div style={styles.inputGroup}>
-                        <label>Email</label>
-                        <input
-                            type="email"
-                            value={email}
-                            onChange={(e) => setEmail(e.target.value)}
-                            required
-                            style={styles.input}
-                        />
-                    </div>
-                    <div style={styles.inputGroup}>
-                        <label>Password</label>
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                            style={styles.input}
-                        />
-                    </div>
-                    <button type="submit" style={styles.button}>Sign Up</button>
-                </form>
-                <p style={styles.linkText}>
-                    Already have an account? <Link to="/login">Login</Link>
-                </p>
+                </div>
             </div>
         </div>
     );
-};
-
-const styles = {
-    container: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-        backgroundColor: '#f5f5f5',
-    },
-    formContainer: {
-        padding: '2rem',
-        backgroundColor: 'white',
-        borderRadius: '8px',
-        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-        width: '100%',
-        maxWidth: '400px',
-    },
-    form: {
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '1rem',
-    },
-    inputGroup: {
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '0.5rem',
-    },
-    input: {
-        padding: '0.5rem',
-        borderRadius: '4px',
-        border: '1px solid #ddd',
-        fontSize: '1rem',
-    },
-    button: {
-        padding: '0.75rem',
-        backgroundColor: '#28a745',
-        color: 'white',
-        border: 'none',
-        borderRadius: '4px',
-        fontSize: '1rem',
-        cursor: 'pointer',
-        marginTop: '1rem',
-    },
-    error: {
-        color: 'red',
-        marginBottom: '1rem',
-    },
-    linkText: {
-        marginTop: '1rem',
-        textAlign: 'center',
-    }
 };
 
 export default Signup;

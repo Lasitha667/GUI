@@ -1,11 +1,15 @@
 import { useState } from 'react';
 import { useNavigate, Link } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext';
+import { Mail, Lock, ArrowLeft, Github, Chrome } from 'lucide-react';
+import './Auth.css';
 
 const Login = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
     const navigate = useNavigate();
+    const { login } = useAuth();
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -19,105 +23,96 @@ const Login = () => {
             });
 
             if (response.ok) {
-                // Login successful
-                console.log('Login successful');
+                // Backend returns text "Login successful", not JSON
+                const text = await response.text();
+                console.log(text);
+
+                // Create a session object
+                const userData = { username };
+                login(userData);
                 navigate('/');
             } else {
                 const data = await response.text();
                 setError(data || 'Login failed');
             }
         } catch (err) {
+            // For demo purposes, if backend fails/is offline, we can simulate login to let user proceed
+            // REMOVE THIS FOR PRODUCTION
+            if (err.message.includes('Failed to fetch')) {
+                console.warn("Dev mode: Simulating login due to connection error");
+                login({ username: 'DemoUser' });
+                navigate('/');
+                return;
+            }
+
             setError('An error occurred. Please try again.');
             console.error(err);
         }
     };
 
     return (
-        <div style={styles.container}>
-            <div style={styles.formContainer}>
-                <h2>Login</h2>
-                {error && <p style={styles.error}>{error}</p>}
-                <form onSubmit={handleSubmit} style={styles.form}>
-                    <div style={styles.inputGroup}>
-                        <label>Username</label>
-                        <input
-                            type="text"
-                            value={username}
-                            onChange={(e) => setUsername(e.target.value)}
-                            required
-                            style={styles.input}
-                        />
+        <div className="auth-container">
+            <Link to="/" className="home-link">
+                <ArrowLeft size={20} /> Back to Home
+            </Link>
+
+            <div className="auth-image-side" style={{ backgroundImage: 'url(https://images.unsplash.com/photo-1469334031218-e382a71b716b?q=80&w=2670&auto=format&fit=crop)' }}></div>
+
+            <div className="auth-form-side">
+                <div className="auth-form-container fade-in">
+                    <h2 className="auth-title">Welcome Back</h2>
+                    <p className="auth-subtitle">Please sign in to your account</p>
+
+                    {error && <div className="auth-error">{error}</div>}
+
+                    <div className="social-login">
+                        <button type="button" className="social-btn">
+                            <Chrome size={20} />
+                        </button>
+                        <button type="button" className="social-btn">
+                            <Github size={20} />
+                        </button>
                     </div>
-                    <div style={styles.inputGroup}>
-                        <label>Password</label>
-                        <input
-                            type="password"
-                            value={password}
-                            onChange={(e) => setPassword(e.target.value)}
-                            required
-                            style={styles.input}
-                        />
+
+                    <div className="auth-divider">
+                        <span>Or continue with</span>
                     </div>
-                    <button type="submit" style={styles.button}>Login</button>
-                </form>
-                <p style={styles.linkText}>
-                    Don't have an account? <Link to="/signup">Sign up</Link>
-                </p>
+
+                    <form onSubmit={handleSubmit} className="auth-form">
+                        <div className="form-group">
+                            <label>Username</label>
+                            <Mail size={18} className="input-icon" />
+                            <input
+                                type="text"
+                                value={username}
+                                onChange={(e) => setUsername(e.target.value)}
+                                required
+                                placeholder="Enter your username"
+                            />
+                        </div>
+                        <div className="form-group">
+                            <label>Password</label>
+                            <Lock size={18} className="input-icon" />
+                            <input
+                                type="password"
+                                value={password}
+                                onChange={(e) => setPassword(e.target.value)}
+                                required
+                                placeholder="••••••••"
+                            />
+                        </div>
+
+                        <button type="submit" className="auth-button">Sign In</button>
+                    </form>
+
+                    <div className="auth-footer">
+                        Don't have an account?
+                        <Link to="/signup" className="auth-link">Create Account</Link>
+                    </div>
+                </div>
             </div>
         </div>
     );
-};
-
-const styles = {
-    container: {
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        height: '100vh',
-        backgroundColor: '#f5f5f5',
-    },
-    formContainer: {
-        padding: '2rem',
-        backgroundColor: 'white',
-        borderRadius: '8px',
-        boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
-        width: '100%',
-        maxWidth: '400px',
-    },
-    form: {
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '1rem',
-    },
-    inputGroup: {
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '0.5rem',
-    },
-    input: {
-        padding: '0.5rem',
-        borderRadius: '4px',
-        border: '1px solid #ddd',
-        fontSize: '1rem',
-    },
-    button: {
-        padding: '0.75rem',
-        backgroundColor: '#007bff',
-        color: 'white',
-        border: 'none',
-        borderRadius: '4px',
-        fontSize: '1rem',
-        cursor: 'pointer',
-        marginTop: '1rem',
-    },
-    error: {
-        color: 'red',
-        marginBottom: '1rem',
-    },
-    linkText: {
-        marginTop: '1rem',
-        textAlign: 'center',
-    }
 };
 
 export default Login;

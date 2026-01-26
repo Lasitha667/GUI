@@ -2,13 +2,22 @@ import React from 'react';
 import { X, ShoppingBag } from 'lucide-react';
 import './ProductModal.css';
 import { useCart } from '../context/CartContext';
+import { useAuth } from '../context/AuthContext';
+import { useNavigate } from 'react-router-dom';
 
 const ProductModal = ({ product, onClose }) => {
     const { addToCart } = useCart();
 
     if (!product) return null;
 
+    const { user } = useAuth();
+    const navigate = useNavigate();
+
     const handleAddToCart = () => {
+        if (!user) {
+            navigate('/login');
+            return;
+        }
         addToCart(product);
         onClose();
     };
