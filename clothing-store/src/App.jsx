@@ -4,6 +4,8 @@ import Layout from './components/Layout'
 import Home from './pages/Home'
 import Men from './pages/Men'
 import Women from './pages/Women'
+import Login from './pages/Login'
+import Signup from './pages/Signup'
 import { CartProvider } from './context/CartContext'
 import CartDrawer from './components/CartDrawer'
 import './App.css'
@@ -15,8 +17,11 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="men" element={<Men />} />
+
           <Route path="women" element={<Women />} />
         </Route>
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
       <CartDrawer />
     </CartProvider>

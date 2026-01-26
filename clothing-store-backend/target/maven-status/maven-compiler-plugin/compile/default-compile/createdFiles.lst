@@ -1,0 +1,5 @@
+com\clothingstore\backend\config\SecurityConfig.class
+com\clothingstore\backend\controller\AuthController.class
+com\clothingstore\backend\ClothingStoreApplication.class
+com\clothingstore\backend\model\User.class
+com\clothingstore\backend\repository\UserRepository.class
